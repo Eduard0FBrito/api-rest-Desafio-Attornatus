@@ -1,7 +1,5 @@
 package com.attornatus.apirest.entity;
 
-import com.attornatus.apirest.entity.Endereco;
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,9 +19,5 @@ public class Pessoa implements Serializable {
     private String nome;
     @Column(name = "dataNascimento", nullable = false)
     private String dataNascimento;
-
-    @ManyToOne
-    @JoinColumn(name = "endereco_id")
-    private Endereco endereco;
 }
 
